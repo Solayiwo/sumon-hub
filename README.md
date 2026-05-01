@@ -1,4 +1,4 @@
-# TechGear Hub 🛍️
+# SuMon Hub 🛍️
 
 A full-stack e-commerce web application that allows users to browse products, add items to a cart, and complete a checkout process.
 
