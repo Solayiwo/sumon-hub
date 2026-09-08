@@ -1,4 +1,4 @@
-# SuMon Hub
+# SuMon Hub 🛍️
 
 SuMon Hub is a full-stack e-commerce prototype for browsing technology products, managing a persistent shopping cart, checking out, and viewing order history.
 
@@ -63,7 +63,7 @@ sumon-hub/
 │   ├── src/context/     # Authentication and cart state
 │   ├── src/pages/       # Application pages
 │   └── src/App.jsx      # Application routes and providers
-├──
+├── README.md
 ```
 
 ## Prerequisites
@@ -198,6 +198,6 @@ Not included in this prototype:
 - Promo-code calculation
 - Account profile editing
 
-## Project Status
+## 📌 Project Status
 
 Phase 2 prototype: the core shopping flow is implemented and documented. The project is intended for local development and demonstration rather than production deployment.
