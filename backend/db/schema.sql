@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS Products (
   product_id INT AUTO_INCREMENT PRIMARY KEY,
   category_id INT NOT NULL,
   name VARCHAR(255) NOT NULL,
+  brand VARCHAR(100) NOT NULL DEFAULT 'Generic',
   price DECIMAL(10, 2) NOT NULL,
   description TEXT,
   image_url VARCHAR(255),
@@ -54,8 +55,3 @@ CREATE TABLE IF NOT EXISTS Order_Items (
 INSERT INTO Categories (category_name) VALUES 
 ('smartphones'), ('laptops'), ('gadgets'), ('accessories')
 ON DUPLICATE KEY UPDATE category_name=category_name;
-
-
-
-ALTER TABLE Products 
-ADD COLUMN brand VARCHAR(100) NOT NULL DEFAULT 'Generic' AFTER name;
