@@ -85,15 +85,15 @@ router.get("/", async (req, res) => {
 // 2. CREATE NEW ORDER (POST /api/orders)
 router.post("/", async (req, res) => {
   try {
-    const { user_id, items, total_price } = req.body;
+    const { user_id, items } = req.body;
 
-    if (!user_id || !items || !Array.isArray(items) || items.length === 0 || !total_price) {
+    if (!user_id || !items || !Array.isArray(items) || items.length === 0) {
       return res.status(400).json({ 
         message: "Missing order metadata or cart items list is completely empty." 
       });
     }
 
-    const orderId = await Order.create({ user_id, items, total_price });
+    const orderId = await Order.create({ user_id, items });
     
     res.status(201).json({
       message: "Order placed successfully!",
